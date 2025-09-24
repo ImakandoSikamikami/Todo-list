@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Imakando Sikamikami</title>
+</head>
+<body>
+    <header>
+        <h1>Список задач</h1>
+    </header>
+    <main>
+        <section class="new_exercise">
+            <label for="task_name">Новая задача</label>
+            <div>
+                <input id="task_name" name="taskName" type="text" placeholder="Название задачи">
+                <button id="add_button" type="submit">+ Добавить</button>
+            </div>
+        </section>
+
+        <section class="tasks">
+            <div class="taskboard">
+                <section class="task-column" id="backlog">
+                    <h3 id="backlog_title">Бэклог</h3>
+                    <ul>
+                        <li>Выучить JS</li>
+                        <li>Выучить React</li>
+                        <li>Сделать домашку</li>
+                    </ul>
+                </section>
+
+                <section class="task-column" id="process">
+                    <h3 id="process_title">В процессе</h3>
+                    <ul>
+                        <li>Выпить смузи</li>
+                        <li>Попыть воды</li>
+                    </ul>
+                </section>
+
+                <section class="task-column" id="ready">
+                    <h3 id="ready_title">Готово</h3>
+                    <ul>
+                        <li>Позвонить маме</li>
+                        <li>Погладить кота</li>
+                    </ul>
+                </section>
+
+                <section class="task-column" id="basket">
+                    <h3 id="basket_title">Корзина</h3>
+                    <ul>
+                        <li>Сходить погулять</li>
+                        <li>Прочитать Войну и Мир</li>
+                    </ul>
+                    <button id="clear_button" type="submit">X Очистить</button>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
