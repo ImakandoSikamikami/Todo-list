@@ -1,61 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Imakando Sikamikami</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Список задач</title>
 </head>
-
 <body class="board-app">
-  <header>
-        <h1>Список задач</h1>
-    </header>
-
   <main class="board-app__main">
-     <section class="new_exercise">
-            <label for="task_name">Новая задача</label>
-            <div>
-                <input id="task_name" name="taskName" type="text" placeholder="Название задачи">
-                <button id="add_button" type="submit">+ Добавить</button>
-            </div>
-        </section>
     <div class="board-app__inner">
-      <section class="taskboard">
-         <section class="add-task">
-          <div class="taskboard">
-                <section class="task-column" id="backlog">
-                    <h3 id="backlog_title">Бэклог</h3>
-                    <ul>
-                        <li>Empty</li>
-                        <li>empty</li>
-                        <li>empty</li>
-                    </ul>
-      </section>
-          <section class="task-column" id="process">
-                    <h3 id="process_title">В процессе</h3>
-                    <ul>
-                        <li>empty</li>
-                        <li>empty</li>
-                    </ul>
-                </section>
-                 <section class="task-column" id="ready">
-                    <h3 id="ready_title">Готово</h3>
-                    <ul>
-                        <li>empty</li>
-                        <li>empty</li>
-                    </ul>
-                </section>
-                <section class="task-column" id="basket">
-                    <h3 id="basket_title">Корзина</h3>
-                    <ul>
-                        <li>empty</li>
-                        <li>empty</li>
-      </section>
+      <section class="add-task"></section>
+      <section class="taskboard"></section>
     </div>
   </main>
+
   <script src="src/main.js" type="module"></script>
 </body>
 </html>
-
